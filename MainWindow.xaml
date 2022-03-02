@@ -6,7 +6,30 @@
         xmlns:local="clr-namespace:WpfBasicControlApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <TextBlock Text="TextBlock"/>
+        <TextBox Text="TextBox"/>
+        <ProgressBar Value="50" Width="60" Height="20"/>
+        <Slider Value="5" Width="60"/>
+        <PasswordBox Password="Secret"/>
+        <Image Source="contact.jpg" Height="30"/>
+        <Button Padding="10">
+            <MediaElement Source="a.MP4" Height="90"/>
+        </Button>
+        <Button Width="100">
+            <CheckBox>
+                <TextBlock 
+                    Text="Avec un retour a la ligne" 
+                    TextWrapping="Wrap"/>
+            </CheckBox>
+        </Button>
+        <Border Background="Orange"
+                CornerRadius="10" Padding="5">
+            <Button Content="Un button"/>
+        </Border>
+        <ScrollViewer Height="300" Width="300"
+                      HorizontalScrollBarVisibility="Auto">
+            <MediaElement Source="a.MP4" Stretch="None"/>
+        </ScrollViewer>
+    </StackPanel>
 </Window>
